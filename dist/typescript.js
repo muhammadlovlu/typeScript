@@ -33,3 +33,15 @@ numbers.push(77);
 console.log(numbers);
 numbers.push(56, 58);
 console.log(numbers);
+numbers.splice(3);
+console.log(numbers);
+const allFriends = ['Richard Rock', 'Raymond', 'Carl', 'Fred'];
+console.log(allFriends);
+let megaName = ' ';
+for (let i = 0; i < allFriends.length; i++) {
+    const friend = allFriends[i];
+    if (friend.length > megaName.length) {
+        megaName = friend;
+    }
+}
+console.log("Largest Name:", megaName);
