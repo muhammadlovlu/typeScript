@@ -19,9 +19,29 @@ function add(num1:number ,num2:number){
 add(5,75);
 add(44, 98);
 
+
+function doubleItAndConsole(num:number):void{
+    const result = num* 2;
+        console.log(result)
+}
+
+const output = doubleItAndConsole(10);
+console.log("output", output)
+
+
 function fullName (firstName :string, lastName:string): string{
     return firstName + ' ' + lastName;
 }
 
 
 const userOne =fullName('Mack', 'LOren');
+
+
+const multiply = (x:number,y:number):number => x*y;
+console.log(multiply(20,10))
+
+
+let secondMultiply: (x:number,y:number) => number;
+secondMultiply = (x,y) => x*y ;
+console.log(secondMultiply(5,4));
+
