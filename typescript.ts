@@ -45,3 +45,8 @@ let secondMultiply: (x:number,y:number) => number;
 secondMultiply = (x,y) => x*y ;
 console.log(secondMultiply(5,4));
 
+const numbers = [1,4,5,94,22,36];
+numbers.push(77);
+console.log(numbers);
+numbers.push(56,58);
+console.log(numbers);
