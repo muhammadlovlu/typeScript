@@ -1,4 +1,12 @@
 "use strict";
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+};
+var _partner;
 let myMoney = 50;
 myMoney = 40;
 myMoney = 0;
@@ -87,3 +95,56 @@ const Richard = {
     salary: 4000000,
     isPlaying: true
 };
+function getBonus(player) {
+    return player.salary * 0.1;
+}
+const poorPlayer = {
+    salary: 45000
+};
+getBonus(poorPlayer);
+class Person {
+    constructor(name, salary, father) {
+        this.fullName = name;
+        this.monthlySalary = salary;
+        this._newpartner = name;
+        this.fatherName = father;
+    }
+    getname() {
+        return this.fullName;
+    }
+}
+const sam = new Person('Samiel', 12000, "David");
+console.log('Name:', sam.fullName);
+console.log("Sam's Salary:", sam.monthlySalary);
+const robin = new Person('Robin clark', 450012, "Carl Ben");
+console.log("Robin's Full Name:", robin.fullName);
+console.log("Robin's Monthly Salary:", robin.monthlySalary);
+const david = new Person('David Wilson', 12000, "Ronny");
+david.fatherName = "rossy";
+console.log("David's Full Name:", david.fullName);
+console.log("David Salary:", david.monthlySalary);
+console.log("David's Father Name:", david.fatherName);
+const ryan = new Person("Ryan Sean", 4500, " Nicolas");
+console.log("Ryan's Full Name:", ryan.fullName);
+console.log("Ryan Salary:", ryan.monthlySalary);
+class PersonTwo {
+    constructor(name, club, salary) {
+        this.name = name;
+        this.clubName = club;
+        this.monthlySalary = salary;
+    }
+}
+// how to declare private property in JS
+class Secondperson {
+    constructor(name) {
+        _partner.set(this, void 0);
+        __classPrivateFieldSet(this, _partner, name);
+    }
+}
+_partner = new WeakMap();
+class PrivatePropertyinTypeScript {
+    constructor(name, wife, father) {
+        this._wifeName = wife;
+        this.fatherName = father;
+    }
+}
