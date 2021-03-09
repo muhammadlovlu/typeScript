@@ -5,7 +5,7 @@ myMoney = 0;
 
 let age:number = 50;
 age = 30;
-let club:string = 'Venizuella';
+let club:string = 'Venezuela';
 const famous: boolean = false;
 let newFamous:boolean;
 newFamous = true;
@@ -68,3 +68,63 @@ console.log("Largest Name:", megaName);
 
 
 
+//object
+let Player: {
+    name:string,
+    salary: number,
+    home:string,
+    telePhone: string,
+    relationshipStatus: string
+
+}
+
+Player = {
+    name: 'Rick Johnson',
+    salary:40000,
+    home: 'Jackson Street, Risul gaam, 457',
+    telePhone:`4744-544-665`,
+    relationshipStatus: 'Single'
+}
+
+
+interface Player  {
+    club : string,
+    name: string,
+    salary : number,
+    wife?: string,
+    isPlaying : boolean
+}
+
+const messy: Player = {
+    name: 'Messy',
+    club: 'Real Madrid',
+    salary: 4500000,
+    wife : 'Julie',
+    isPlaying: true,
+}
+const ronaldo : Player = {
+    name :'Ronaldo gero',
+    club: 'Derrel Club',
+    salary: 1200000,
+    wife: 'Rose',
+    isPlaying: false
+}
+const robinson : Player = {
+    name:'Tommy Robinson',
+    club: 'Zilla',
+    salary: 750000,
+    wife: 'Carl',
+    isPlaying: false
+}
+const Darrel : Player ={
+    name: 'Darrel Tom',
+    club: 'Neffix',
+    salary:850000,
+    isPlaying: true
+}
+const Richard : Player = {
+    name: 'Richard Jay',
+    club:'Bercelona',
+    salary:4000000,
+    isPlaying:true
+}

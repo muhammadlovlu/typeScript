@@ -4,7 +4,7 @@ myMoney = 40;
 myMoney = 0;
 let age = 50;
 age = 30;
-let club = 'Venizuella';
+let club = 'Venezuela';
 const famous = false;
 let newFamous;
 newFamous = true;
@@ -45,3 +45,45 @@ for (let i = 0; i < allFriends.length; i++) {
     }
 }
 console.log("Largest Name:", megaName);
+//object
+let Player;
+Player = {
+    name: 'Rick Johnson',
+    salary: 40000,
+    home: 'Jackson Street, Risul gaam, 457',
+    telePhone: `4744-544-665`,
+    relationshipStatus: 'Single'
+};
+const messy = {
+    name: 'Messy',
+    club: 'Real Madrid',
+    salary: 4500000,
+    wife: 'Julie',
+    isPlaying: true,
+};
+const ronaldo = {
+    name: 'Ronaldo gero',
+    club: 'Derrel Club',
+    salary: 1200000,
+    wife: 'Rose',
+    isPlaying: false
+};
+const robinson = {
+    name: 'Tommy Robinson',
+    club: 'Zilla',
+    salary: 750000,
+    wife: 'Carl',
+    isPlaying: false
+};
+const Darrel = {
+    name: 'Darrel Tom',
+    club: 'Neffix',
+    salary: 850000,
+    isPlaying: true
+};
+const Richard = {
+    name: 'Richard Jay',
+    club: 'Bercelona',
+    salary: 4000000,
+    isPlaying: true
+};
